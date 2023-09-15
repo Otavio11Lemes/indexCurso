@@ -4,5 +4,6 @@ from core.models import Cursos
 
 class CursoAdmin (admin.ModelAdmin):
     list_display = ('titulo_curso' ,'categoria')
+    list_filter = ('titulo_curso', 'categoria')
 
 admin.site.register(Cursos, CursoAdmin)
